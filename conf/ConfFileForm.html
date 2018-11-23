@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="height: 268px; ">
+	<div>
+		<div>
+	
+	
+	<form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="hidden" name="operacion" value="loadconf"><input type="submit" value="Cargar archivo de configuracion">
+	</form>
+	
+	</div>
+			<div>
+	
+	<form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="hidden" name="operacion" value="downloadconf"><input type="submit" value="Descargar archivo de configuracion">
+	</form>
+	
+	</div>
+
+		<div>
+			<form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="hidden" name="operacion" value="loadimage"><input type="submit" value="Cargar Imagen">
+	</form>
+	</div>
+		<div>	<form action="<?php  echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<input type="hidden" name="operacion" value="deleteallimages"><input type="submit" value="Borrar todas las imagenes">
+	</form>
+	</div>
+
+
+	</div>
+</body>
+</html>
